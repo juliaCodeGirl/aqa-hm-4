@@ -99,7 +99,7 @@ public class TestCardForm {
         form.$(byText("Забронировать")).click();
         $(".input_invalid [role='presentation']").shouldHave(Condition.text("Я соглашаюсь"));
     }
-//    Заказ на выбранную дату невозможен
+
     @Test
     void shouldErrorIfInvalidDate() {
         open("http://localhost:9999/");
